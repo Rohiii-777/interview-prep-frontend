@@ -64,8 +64,9 @@ const QnaCard: React.FC<Props> = ({
   const [copiedCode, setCopiedCode] = useState<number | null>(null);
   const [performanceRating, setPerformanceRating] = useState<number | null>(null);
 
-  const timerRef = useRef<NodeJS.Timeout>();
-  const speechRef = useRef<SpeechSynthesisUtterance | null>(null);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+const speechRef = useRef<SpeechSynthesisUtterance | null>(null);
 
   // Initialize flashcard mode
   useEffect(() => {

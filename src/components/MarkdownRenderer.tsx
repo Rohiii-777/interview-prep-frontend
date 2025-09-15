@@ -32,7 +32,7 @@ const MarkdownRenderer: React.FC<{ content: string }> = ({ content }) => {
         h2: ({ node, ...props }) => <h2 className="text-xl font-semibold mt-3 mb-2" {...props} />,
         ul: ({ node, ...props }) => <ul className="list-disc list-inside space-y-1 mb-2" {...props} />,
         ol: ({ node, ...props }) => <ol className="list-decimal list-inside space-y-1 mb-2" {...props} />,
-        code: ({ inline, ...props }) =>
+        code: ({ inline, ...props }:any) =>
           inline ? (
             <code className="px-1 py-0.5 bg-gray-700 rounded text-sm" {...props} />
           ) : (

@@ -1,5 +1,5 @@
 // src/App.tsx
-import React, { useEffect, useState, useCallback  } from "react";
+import { useEffect, useState, useCallback  } from "react";
 import { api } from "./api";
 import { debounce } from "lodash";
 import QnaCard from "./components/QnaCard";
